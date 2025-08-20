@@ -1,1 +1,38 @@
 @import "tailwindcss";
+/* 
+.page-nav {
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 32px;
+    background: #575fcf;
+}
+
+.page-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-nav a:hover {
+    color: #ef5777;
+}
+
+.navigation-link {
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
+    background: #ef5777;
+    padding: 9px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.navigation-link:hover {
+    background-color: #575fcf;
+} */
