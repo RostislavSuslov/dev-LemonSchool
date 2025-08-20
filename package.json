@@ -1,0 +1,21 @@
+{
+  "name": "lemonschool",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1", 
+    "vite": "^7.1.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "tailwindcss": "^4.1.11",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-handlebars": "^2.0.0"
+  }
+}
