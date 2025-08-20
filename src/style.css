@@ -14,7 +14,7 @@
 
 .page-nav a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none; no-underline
 }
 
 .page-nav a:hover {
