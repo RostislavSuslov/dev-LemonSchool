@@ -6,25 +6,28 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet">
-    <title>Vite App</title>
+    <title>nav</title>
 </head>
 
-<body class="bg-indigo-700">
+<body class="bg-stone">
+     {{> header logo='/public/logo.svg'}}
     <nav class="flex flex-col items-center justify-center min-h-screen gap-y-3 md:gap-y-5">
-        <a href="@media.html" class="text-white hover:text-yellow-500 text-3xl">@media</a>
-        <a href="animation.html" class="text-white hover:text-yellow-500 text-3xl">animation</a>
-        <a href="BEM.html" class="text-white hover:text-yellow-500 text-3xl">BEM</a>
-        <a href="box-sizing.html" class="text-white hover:text-yellow-500 text-3xl">box-sizing</a>
-        <a href="flex-box.html" class="text-white hover:text-yellow-500 text-3xl">flex-box</a>
-        <a href="fonts.html" class="text-white hover:text-yellow-500 text-3xl">fonts</a>
-        <a href="index.html" class="text-white hover:text-yellow-500 text-3xl">index</a>
-        <a href="nth-child.html" class="text-white hover:text-yellow-500 text-3xl">nth-child</a>
-        <a href="position.html" class="text-white hover:text-yellow-500 text-3xl">position</a>
-        <a href="selectors.html" class="text-white hover:text-yellow-500 text-3xl">selectors</a>
-        <a href="space.html" class="text-white hover:text-yellow-500 text-3xl">space</a>
-        <a href="table.html" class="text-white hover:text-yellow-500 text-3xl">table</a>
+        <a href="@media.html" class="text-white hover:text-cyan text-3xl">@media</a>
+        <a href="animation.html" class="text-white hover:text-cyan text-3xl">animation</a>
+        <a href="BEM.html" class="text-white hover:text-cyan text-3xl">BEM</a>
+        <a href="box-sizing.html" class="text-white hover:text-cyan text-3xl">box-sizing</a>
+        <a href="flex-box.html" class="text-white hover:text-cyan text-3xl">flex-box</a>
+        <a href="fonts.html" class="text-white hover:text-cyan text-3xl">fonts</a>
+        <a href="index.html" class="text-white hover:text-cyan text-3xl">index</a>
+        <a href="nth-child.html" class="text-white hover:text-cyan text-3xl">nth-child</a>
+        <a href="position.html" class="text-white hover:text-cyan text-3xl">position</a>
+        <a href="selectors.html" class="text-white hover:text-cyan text-3xl">selectors</a>
+        <a href="space.html" class="text-white hover:text-cyan text-3xl">space</a>
+        <a href="table.html" class="text-white hover:text-cyan text-3xl">table</a>
+        <a href="template-page.html" class="text-white hover:text-cyan text-3xl">template-page</a>
     </nav>
-    <script src="/src/main.js"></script>
+    {{> footer }}
+    
 </body>
 
 </html>
