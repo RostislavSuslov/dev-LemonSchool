@@ -17,6 +17,7 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.12",
     "@tailwindcss/vite": "^4.1.11",
+    "sass": "^1.92.1",
     "tailwindcss": "^4.1.12",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-handlebars": "^2.0.0"
