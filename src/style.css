@@ -10,13 +10,15 @@
     --color-purple: #5221E6;
     --color-neutral-300: #C4C4C4;
     --color-indigo-900: #181823;
-
+    
     --text-h1: 48px;
     --text-h2: 42px;
     --text-h3: 36px;
     --text-h4: 28px;
     --text-h5: 24px;
     --text-h6: 20px;
+    --text-h6: 20px;
+    --text-banner-title: 78px;
     --margin-template: 100px;
     --padding-template: 100px;
     --font-funnel-display: "Funnel Display", sans-serif;
@@ -25,6 +27,7 @@
     --font-sen:  "Sen", sans-serif;
 
     --container-5xl: 1464px;
+    
 }
 
 @layer components {
@@ -38,7 +41,6 @@
 
   h1 {
       font-size: var(--text-h1);
-      color: var(--color-cyan);
   }
 }
 
