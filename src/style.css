@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Funnel+Display:wght@300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Funnel+Display:wght@300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sen:wght@400..800&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -6,6 +6,11 @@
     --color-neutral: #393e46;
     --color-cyan: #1bf5ff;
     --color-white: #eeeeee;
+    /*home page-colors*/
+    --color-purple: #5221E6;
+    --color-neutral-300: #C4C4C4;
+    --color-indigo-900: #181823;
+
     --text-h1: 48px;
     --text-h2: 42px;
     --text-h3: 36px;
@@ -16,7 +21,10 @@
     --padding-template: 100px;
     --font-funnel-display: "Funnel Display", sans-serif;
     --font-nunito-sans: "Nunito Sans", sans-serif;
-    --font-amarante:  "Amarante", serif
+    --font-amarante:  "Amarante", serif;
+    --font-sen:  "Sen", sans-serif;
+
+    --container-5xl: 1464px;
 }
 
 @layer components {
@@ -32,4 +40,9 @@
       font-size: var(--text-h1);
       color: var(--color-cyan);
   }
+}
+
+[alt=""]  {
+    filter: blur(10px);
+    opacity: 0.6;
 }
