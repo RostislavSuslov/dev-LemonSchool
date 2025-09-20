@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Funnel+Display:wght@300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sen:wght@400..800&display=swap');
 @import "tailwindcss";
 
+
 @theme {
     --color-stone: #222831;
     --color-neutral: #393e46;
@@ -70,3 +71,11 @@
     filter: blur(10px);
     opacity: 0.6;
 }
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+
+ 
