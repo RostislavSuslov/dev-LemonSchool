@@ -14,6 +14,7 @@
 <body class="bg-stone">
   {{> header logo='/public/logo.svg'}}
   {{> page-title title="LemonSchool" subtitle="subtitle" }}
+  <button type="button" id="triger" class="px-8 py-3 bg-amber-400 hover:bg-amber-600 cursor-pointer">Triger</button>
   
   <div class="bg-black">
     <div class="mx-auto px-3 max-w-7xl font-sen bg-black">
@@ -73,7 +74,9 @@
   </div>
 
   {{> footer }}
+  {{> modal }}
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> 
+  <script src="/src/modal.js"></script>
   <script src="/src/main.js"></script>
 </body>
 
