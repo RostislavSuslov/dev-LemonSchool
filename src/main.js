@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
         const images = document.querySelectorAll('img');
 
         images.forEach(item => {
-            if (!item.getAttribute('src')) {
+            if (!item.getAttribute('src') || item.getAttribute('src') === "") {
                 fetch('https://picsum.photos/332/420')
                     .then(response => response.blob())
                     .then(blob => item.src = URL.createObjectURL(blob))
