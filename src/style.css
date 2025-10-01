@@ -77,5 +77,6 @@
   height: auto;
 }
 
-
- 
+.modal.show:last-of-type {
+    z-index: 30;
+}
