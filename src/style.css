@@ -38,7 +38,7 @@
     --container-4xl: 1136px;
     --container-5xl: 1320px;
     --container-7xl: 1464px;
-    
+
 }
 
 @layer components {
@@ -73,8 +73,8 @@
 }
 
 .swiper {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .modal.show:last-of-type {
