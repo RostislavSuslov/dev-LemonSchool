@@ -8,28 +8,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link href="/src/style.css" rel="stylesheet">
 
-  <title>LemonSchool</title>
+  <title>Robin Williams</title>
 </head>
 
 <body class="bg-stone">
-  {{> header logo='/public/logo.svg'}}
-  {{> page-title title="LemonSchool" subtitle="subtitle" }}
-  <button type="button" data-triger="modal-login"
-    class="px-8 py-3 bg-amber-400 hover:bg-amber-600 cursor-pointer">modal-login</button>
-  <button type="button" data-triger="modal-register"
-    class="px-8 py-3 bg-amber-400 hover:bg-amber-600 cursor-pointer">modal-register</button>
-  <button type="button" data-triger="modal-1"
-    class="px-8 py-3 bg-amber-400 hover:bg-amber-600 cursor-pointer">modal-1</button>
-  <button type="button" data-triger="modal-2"
-    class="px-8 py-3 bg-amber-400 hover:bg-amber-600 cursor-pointer">modal-2</button>
-  <button type="button" data-triger="modal-3"
-    class="px-8 py-3 bg-amber-400 hover:bg-amber-600 cursor-pointer">modal-3</button>
-  <button type="button" data-triger="modal-4"
-    class="px-8 py-3 bg-amber-400 hover:bg-amber-600 cursor-pointer">modal-4</button>
-
   <div class="bg-black">
     <div class="mx-auto px-3 max-w-7xl font-sen bg-black">
-      {{> header-porfolio}}
+      {{> header}}
       {{> banner}}
 
       {{> experience}}
@@ -63,13 +48,12 @@
       {{> tabs}}
       {{> contacts}}
 
+      {{> footer }}
     </div>
   </div>
 
-  {{> footer }}
-  {{> modal }}
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <script src="/src/modal.js"></script>
   <script src="/src/main.js"></script>
 </body>
 
