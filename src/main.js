@@ -1,6 +1,4 @@
 window.addEventListener('load', () => {
-  
-
     const burgerBtn = document.querySelector('#burger');
     const mobileContainer = document.querySelector('#mobile-container');
     const body = document.querySelector('body')
@@ -62,7 +60,6 @@ window.addEventListener('load', () => {
     // window.addEventListener("resize", initSwiper);
 
     document.querySelectorAll('.tabs').length ? installTabs() : null;
-    document.querySelectorAll('img').length ? getLoremImage() : null;
 })
 
 
