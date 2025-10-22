@@ -39,8 +39,19 @@
             font-size: 56px;
         }
 
-        @media (min-width: 1024px) {
+        @media (min-width: 1025px) {
             font-size: 78px;
+        }
+    }
+
+    .swiper {
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            @media (min-width: 1025px) {
+                display: flex;
+            }
         }
     }
 }
@@ -48,9 +59,4 @@
 [alt=""] {
     filter: blur(10px);
     opacity: 0.6;
-}
-
-.swiper {
-    width: 100%;
-    height: auto;
 }

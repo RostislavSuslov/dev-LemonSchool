@@ -39,28 +39,27 @@ window.addEventListener('load', () => {
     }
 
 
-    // let partnersSwiper;
+    let partnersSwiper;
 
-    // function initSwiper() {
-    //     if (window.innerWidth >= 768 && !partnersSwiper) {
-    //         partnersSwiper = new Swiper(".swiper", {
-    //             slidesPerView: 5,
-    //             breakpoints: {
-    //                 1024: { slidesPerView: 4 },
-    //                 768: { slidesPerView: 6 },
-    //             },
-    //         });
-    //     } else if (window.innerWidth < 768 && partnersSwiper) {
-    //         partnersSwiper.destroy(true, true);
-    //         partnersSwiper = null;
-    //     }
-    // }
+    partnersSwiper = new Swiper(".swiper", {
+        slidesPerView: 5,
+    });
 
-    // window.addEventListener("load", initSwiper);
-    // window.addEventListener("resize", initSwiper);
+    const initSwiper = () => {
+        if (window.innerWidth >= 992 && !partnersSwiper) {
+            new Swiper(".swiper", {
+                slidesPerView: 5,
+            });
+        } else if (window.innerWidth < 991 && partnersSwiper) {
+            partnersSwiper.destroy(true, true);
+            partnersSwiper = null;
+        }
+    }
+
+    window.addEventListener("load", initSwiper);
+    window.addEventListener("resize", initSwiper);
 
     document.querySelectorAll('.tabs').length ? installTabs() : null;
 })
 
 
- 
