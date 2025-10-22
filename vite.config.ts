@@ -18,4 +18,5 @@ export default defineConfig({
     }),
     FullReload(["src/partials/**/*"])
   ],
+  
 })

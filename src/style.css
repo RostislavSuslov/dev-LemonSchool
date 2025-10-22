@@ -25,9 +25,10 @@
 
     --font-sen: "Sen", sans-serif;
 
-    --container-4xl: 1136px;
+    --container-4xl: 1220px;
     --container-5xl: 1320px;
-    --container-7xl: 1464px;
+    /* --container-7xl: 1464px; */
+    --container-7xl: 1440px;
 }
 
 @layer components {
