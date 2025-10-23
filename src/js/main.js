@@ -1,3 +1,5 @@
+import '../css/style.css'
+
 window.addEventListener('load', () => {
     const burgerBtn = document.querySelector('#burger');
     const mobileContainer = document.querySelector('#mobile-container');
