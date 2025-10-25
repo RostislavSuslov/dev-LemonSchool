@@ -41,27 +41,76 @@ window.addEventListener('load', () => {
     }
 
 
-    let partnersSwiper;
 
-    partnersSwiper = new Swiper(".swiper", {
-        slidesPerView: 5,
-    });
 
-    const initSwiper = () => {
-        if (window.innerWidth >= 992 && !partnersSwiper) {
-            new Swiper(".swiper", {
-                slidesPerView: 5,
+    // const partnersSwiper = new Swiper(".swiper", {
+    //     slidesPerView: 4,
+    //     speed: 3000,
+    //     loop: true,
+    //     autoplay: {
+    //         delay: 0,
+    //         disableOnInteraction: false,
+    //     },
+    // });
+
+    // const initSwiper = () => {
+    //     if (window.innerWidth >= 992) {
+    //         console.log(window.innerWidth);
+
+    //         new Swiper(".swiper", {
+    //             slidesPerView: 4,
+    //             speed: 3000,
+    //             loop: true,
+    //             autoplay: {
+    //                 delay: 0,
+    //                 disableOnInteraction: false,
+    //             },
+    //         });
+    //     } else if (window.innerWidth <= 991) {
+    //         console.log(window.innerWidth + "<= 991");
+
+    //         partnersSwiper.destroy(true, true);
+    //         partnersSwiper = null;
+    //     }
+    // }
+
+    // window.addEventListener("load", initSwiper);
+    // window.addEventListener("resize", initSwiper);
+
+    function initPartners() {
+        const breakpoint = window.matchMedia("(max-width:991px)");
+        console.log(breakpoint);
+
+        let partnersSwiper;
+
+        const breakpointChecker = function () {
+            if (breakpoint.matches === true) {
+                if (partnersSwiper !== undefined) partnersSwiper.destroy(true, true);
+                return;
+            } else if (breakpoint.matches === false) {
+                return enableSwiper();
+            }
+        };
+
+        const enableSwiper = function () {
+            partnersSwiper = new Swiper(".swiper", {
+                    slidesPerView: 4,
+                    speed: 3000,
+                    loop: true,
+                    autoplay: {
+                        delay: 0,
+                        disableOnInteraction: false,
+                    },
             });
-        } else if (window.innerWidth < 991 && partnersSwiper) {
-            partnersSwiper.destroy(true, true);
-            partnersSwiper = null;
-        }
+        };
+        breakpoint.addListener(breakpointChecker);
+        breakpointChecker();
     }
 
-    window.addEventListener("load", initSwiper);
-    window.addEventListener("resize", initSwiper);
 
+    initPartners()
     document.querySelectorAll('.tabs').length ? installTabs() : null;
 })
+
 
 

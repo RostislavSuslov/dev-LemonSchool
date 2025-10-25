@@ -73,8 +73,10 @@ export default defineConfig({
 // │     │    ├─ project-1.png
 // │     │    ├─ project-2.png
 // │     │    └─ project-3.png
-// │     ├─index-Dw4hzBKQ.js
-// │     └─index-gKkT5Gh7.css
+// │     ├─ css/
+// │     │    └─ index.css
+// │     └─ js/
+// │         └─ index.js
 // │
 // └─ index.html              
             
