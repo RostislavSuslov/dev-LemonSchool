@@ -12,11 +12,10 @@ window.addEventListener('load', () => {
         body.classList.toggle('overflow-hidden')
     })
 
-
     const installTabs = () => {
         const tabsButtons = document.querySelectorAll('[data-tab-content]')
         const tabContent = document.querySelectorAll('.tab-content')
-
+      
         const removeActiveClassForNav = () => {
             tabsButtons.forEach(item => item.classList.remove('bg-purple'))
         }
@@ -39,43 +38,6 @@ window.addEventListener('load', () => {
             })
         })
     }
-
-
-
-
-    // const partnersSwiper = new Swiper(".swiper", {
-    //     slidesPerView: 4,
-    //     speed: 3000,
-    //     loop: true,
-    //     autoplay: {
-    //         delay: 0,
-    //         disableOnInteraction: false,
-    //     },
-    // });
-
-    // const initSwiper = () => {
-    //     if (window.innerWidth >= 992) {
-    //         console.log(window.innerWidth);
-
-    //         new Swiper(".swiper", {
-    //             slidesPerView: 4,
-    //             speed: 3000,
-    //             loop: true,
-    //             autoplay: {
-    //                 delay: 0,
-    //                 disableOnInteraction: false,
-    //             },
-    //         });
-    //     } else if (window.innerWidth <= 991) {
-    //         console.log(window.innerWidth + "<= 991");
-
-    //         partnersSwiper.destroy(true, true);
-    //         partnersSwiper = null;
-    //     }
-    // }
-
-    // window.addEventListener("load", initSwiper);
-    // window.addEventListener("resize", initSwiper);
 
     function initPartners() {
         const breakpoint = window.matchMedia("(max-width:991px)");
@@ -106,7 +68,6 @@ window.addEventListener('load', () => {
         breakpoint.addListener(breakpointChecker);
         breakpointChecker();
     }
-
 
     initPartners()
     document.querySelectorAll('.tabs').length ? installTabs() : null;

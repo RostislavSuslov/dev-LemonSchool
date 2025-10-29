@@ -79,4 +79,11 @@ export default defineConfig({
 // │         └─ index.js
 // │
 // └─ index.html              
-            
+   
+
+
+// added pictures
+// google page speed
+// Cross-browser compatibility
+// pixel perfect
+
