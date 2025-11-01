@@ -1,4 +1,6 @@
 import '../css/style.css'
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 window.addEventListener('load', () => {
     const burgerBtn = document.querySelector('#burger');
@@ -15,7 +17,7 @@ window.addEventListener('load', () => {
     const installTabs = () => {
         const tabsButtons = document.querySelectorAll('[data-tab-content]')
         const tabContent = document.querySelectorAll('.tab-content')
-      
+
         const removeActiveClassForNav = () => {
             tabsButtons.forEach(item => item.classList.remove('bg-purple'))
         }
@@ -56,13 +58,13 @@ window.addEventListener('load', () => {
 
         const enableSwiper = function () {
             partnersSwiper = new Swiper(".swiper", {
-                    slidesPerView: 4,
-                    speed: 3000,
-                    loop: true,
-                    autoplay: {
-                        delay: 0,
-                        disableOnInteraction: false,
-                    },
+                slidesPerView: 4,
+                speed: 3000,
+                loop: true,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
             });
         };
         breakpoint.addListener(breakpointChecker);
