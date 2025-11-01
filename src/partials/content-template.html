@@ -5,7 +5,14 @@
         <a href="#" class="text-indigo-900 mt-auto eading-[1.75] border-b pb-1 border-gray-500">{{link}}</a>
     </div>
     <div>
-        <img src="./assets/img/{{image}}" class="object-cover w-full h-112.5 md:h-full" alt="{{alt}}">
+        <picture>
+            <source type="image/webp" media='(min-width: 1024px)' srcset='./assets/img/{{image-xl-webp}}'>
+            <source type="image/png" media='(min-width: 1024px)' srcset='./assets/img/{{image-xl-png}}'>
+            <source type="image/webp" media='(min-width: 768px)' srcset='./assets/img/{{image-md-webp}}'>
+            <source type="image/png" media='(min-width: 768px)' srcset='./assets/img/{{image-md-webp}}'>
+            <source srcset="./assets/img/{{image-sm-png}}">  
+            <img src='./assets/img/{{image-sm-webp}}' alt="{{alt}}">
+        </picture>
     </div>
 </section>
  

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
@@ -7,37 +8,48 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <title>Robin Williams</title>
 </head>
+
 <body class="bg-black text-white font-sen min-h-screen flex flex-col overflow-x-hidden">
-    {{> header}}
-    {{> banner}}
-    {{> experience}}
-    {{> content-template 
-      title='Philosophy & values'
-      description='I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and
-      experience with the universe. I try to grasp these things with my values: authenticity, creativity, &
-      hospitality.'
-      link='More about me'
-      image='content-philosophy.png'
-      alt='philosophy'
-      bg-color="bg-amber-100"}}
-    {{> skillset}}
-    {{> partners}}
-    {{> projects}}
-    {{> content-template
-    title='Instagram'
-    description='If you area a person who enjoys photography, then I highly recommend that you check out my Instagram.
-    I’m an avid traveller and I capture the best moments that I would love to cherish with the world'
-    link='Follow me on IG'
-    image='content-instagram.png'
-    alt='instagram'
-    bg-color="bg-pink-100"}}
-    {{> dribbble}} 
-    {{> about}} 
-    {{> photography}}
-    {{> contacts}}    
-    {{> footer }}
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script type="module" src="/src/js/main.js"></script>
+  {{> header}}
+  {{> banner}}
+  {{> experience}}
+  {{> content-template
+  title='Philosophy & values'
+  description='I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and
+  experience with the universe. I try to grasp these things with my values: authenticity, creativity, &
+  hospitality.'
+  link='More about me'
+  image-xl-webp='content-philosophy-xl.webp'
+  image-xl-png='content-philosophy-xl.png'
+  image-md-webp='content-philosophy-md.webp'
+  image-md-png='content-philosophy-md.png'
+  image-sm-webp='content-philosophy-sm.webp'
+  image-sm-png='content-philosophy-sm.png'
+  alt='philosophy'
+  bg-color="bg-amber-100"}}
+  {{> skillset}}
+  {{> partners}}
+  {{> projects}}
+  {{> content-template
+  title='Instagram'
+  description='If you area a person who enjoys photography, then I highly recommend that you check out my Instagram.
+  I’m an avid traveller and I capture the best moments that I would love to cherish with the world'
+  link='Follow me on IG'
+  image-xl-webp='content-instagram-xl.webp'
+  image-xl-png='content-instagram-xl.png'
+  image-md-webp='content-instagram-md.webp'
+  image-md-png='content-instagram-md.png'
+  image-sm-webp='content-instagram-sm.webp'
+  image-sm-png='content-instagram-sm.png'
+  alt='instagram'
+  bg-color="bg-pink-100"}}
+  {{> dribbble}}
+  {{> about}}
+  {{> photography}}
+  {{> contacts}}
+  {{> footer }}
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script type="module" src="/src/js/main.js"></script>
 </body>
 
 </html>
