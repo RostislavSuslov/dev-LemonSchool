@@ -74,6 +74,3 @@ window.addEventListener('load', () => {
     initPartners()
     document.querySelectorAll('.tabs').length ? installTabs() : null;
 })
-
-
-
